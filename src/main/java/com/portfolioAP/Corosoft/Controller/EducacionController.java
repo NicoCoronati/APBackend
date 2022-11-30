@@ -50,10 +50,10 @@ public class EducacionController {
                                 @RequestParam("fecha") String nuevaFecha) {
         Educacion educacion = ieducacionService.findEducacion(id);
         
-        educacion.setNombre_escuela(nuevoNombre);
-        educacion.setUrl_foto(nuevaUrlFoto);
-        educacion.setTitulo(nuevoTitulo);
-        educacion.setFecha(nuevaFecha);
+        educacion.setnombre_escuela(nuevoNombre);
+        educacion.seturl_foto(nuevaUrlFoto);
+        educacion.settitulo(nuevoTitulo);
+        educacion.setfecha(nuevaFecha);
         
         ieducacionService.saveEducacion(educacion);
         return educacion;

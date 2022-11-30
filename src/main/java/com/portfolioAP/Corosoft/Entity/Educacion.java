@@ -27,4 +27,19 @@ public class Educacion {
     private String titulo;
     private String fecha;
     
+    public void settitulo(String nuevoTitulo) {
+        this.titulo = nuevoTitulo;
+    }
+    
+    public void setnombre_escuela(String nuevoNombre) {
+        this.nombre_escuela = nuevoNombre;
+    }
+    
+    public void seturl_foto(String nuevoUrl) {
+        this.url_foto = nuevoUrl;
+    }
+    
+    public void setfecha(String nuevaFecha) {
+        this.fecha = nuevaFecha;
+    }
 }
