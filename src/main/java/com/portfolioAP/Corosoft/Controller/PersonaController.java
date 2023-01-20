@@ -48,25 +48,25 @@ public class PersonaController {
                                 @RequestParam("nombre") String nuevoNombre,
                                 @RequestParam("apellido") String nuevoApellido,
                                 @RequestParam("ocupacion") String nuevaOcupacion,
-                                @RequestParam("fecha_nac") String nuevaFechaNac,
-                                @RequestParam("correo") String nuevoCorreo,
+                                //@RequestParam("fecha_nac") String nuevaFechaNac,
+                                //@RequestParam("correo") String nuevoCorreo,
                                 @RequestParam("sobre_mi") String nuevoSobreMi,
-                                @RequestParam("url_perfil") String nuevaUrlPerfil,
-                                @RequestParam("url_banner") String nuevaUrlBanner,
-                                @RequestParam("usuario_email") String nuevoUsuarioEmail,
-                                @RequestParam("id_domicilio") int nuevoIdDomicilio) {
+                                @RequestParam("url_perfil") String nuevaUrlPerfil) {
+                                //@RequestParam("url_banner") String nuevaUrlBanner,
+                                //@RequestParam("usuario_email") String nuevoUsuarioEmail,
+                                //@RequestParam("id_domicilio") int nuevoIdDomicilio) {
         Persona persona = ipersonaService.findPersona(id);
         
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
         persona.setOcupacion(nuevaOcupacion);
-        persona.setFecha_nac(nuevaFechaNac);
-        persona.setCorreo(nuevoCorreo);
+        //persona.setFecha_nac(nuevaFechaNac);
+        //persona.setCorreo(nuevoCorreo);
         persona.setSobre_mi(nuevoSobreMi);
         persona.setUrl_perfil(nuevaUrlPerfil);
-        persona.setUrl_banner(nuevaUrlBanner);
-        persona.setUsuario_email(nuevoUsuarioEmail);
-        persona.setId_domicilio(nuevoIdDomicilio);
+        //persona.setUrl_banner(nuevaUrlBanner);
+        //persona.setUsuario_email(nuevoUsuarioEmail);
+        //persona.setId_domicilio(nuevoIdDomicilio);
         
         
         ipersonaService.savePersona(persona);
